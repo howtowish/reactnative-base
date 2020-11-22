@@ -24,9 +24,9 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import AppTest from './src/AppTest'
-import AppTest1 from './src/AppTest1'
-import { Stores } from './src/Stores'
+import AppTest from './src/react-hook/examples/AppTest'
+import AppTest1 from './src/react-hook/examples/AppTest1'
+import { Stores } from './src/react-hook/examples'
 const App: () => React$Node = () => {
   return (
     <Stores>

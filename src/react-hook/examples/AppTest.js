@@ -12,20 +12,19 @@ import {
   StatusBar,
   TouchableOpacity
 } from 'react-native';
-import { useDispatch, useSelector } from './react-hook/index'
-
-const AppTest1 = () => {
-  const state = useSelector('count');
+import { useDispatch, useSelector, actions } from './index'
+const AppTest = () => {
+  // const state = useSelector('count');
   const dispatch = useDispatch()
-  console.log('test1', state)
+  console.log('test')
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <TouchableOpacity style={{ marginTop: 100}} onPress={() => {dispatch({ type: 'increment' })}}>
-        <Text>12</Text>
+      <TouchableOpacity style={{ marginTop: 100}} onPress={() => actions.discreaseCount({ dispatch })}>
+        <Text>123</Text>
       </TouchableOpacity>
     </>
   );
 };
 
-export default AppTest1;
+export default AppTest;
